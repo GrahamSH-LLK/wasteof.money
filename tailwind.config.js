@@ -11,6 +11,5 @@ module.exports = {
       '10': '10px'
     }
   },
-  variants: {},
-  plugins: [],
+  variants: {}
 }
