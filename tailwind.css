@@ -76,11 +76,11 @@ h1 {
 }
 
 .markdown code {
-	@apply font-mono text-sm inline bg-gray-200 rounded px-1 py-05;
+	@apply font-mono text-sm inline bg-gray-800 rounded px-1 py-05;
 }
 
 .markdown pre {
-	@apply bg-gray-100 rounded p-4;
+	@apply bg-gray-800 rounded p-4;
 }
 
 .markdown pre code {
@@ -114,9 +114,6 @@ h1 {
 
 /* Override pygments style background color. */
 
-.markdown .highlight pre {
-	@apply bg-gray-100 !important;
-}
 
 /* sweet alert mods */
 

@@ -20,6 +20,16 @@ public class Hello1
    }
 }
 ```
+```java
+public class Hello1
+{
+   public static void Main()
+   {
+-      System.Console.WriteLine("Hello, World!");
++      System.Console.WriteLine("good bye!");
+   }
+}
+```
 ## html with javascript 🤯
 ```html
 <button>i am button</button>
