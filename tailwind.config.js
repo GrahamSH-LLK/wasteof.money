@@ -11,7 +11,6 @@ module.exports = {
     mode: 'all',
     "content": ['./pages/*.ejs', './partials/*.ejs']
   },
-
   theme: {
     extend: {},
     inset: {
