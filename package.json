@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run serve",
-    "dev": "nodemon index.js & npm run tailwind:build",
+    "dev": "nodemon index.js",
     "serve": "node index.js",
     "tailwind:build": "postcss tailwind.css -o static/assets/css/style.css",
     "setup": "node env.js"
@@ -23,6 +23,7 @@
     "express": "^4.17.1",
     "express-rate-limit": "^5.2.2",
     "gray-matter": "^4.0.2",
+    "image-size": "^0.9.3",
     "jdenticon": "^3.0.1",
     "marked": "^1.2.7",
     "monk": "^7.3.2",
