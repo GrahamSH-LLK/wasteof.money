@@ -56,6 +56,13 @@ const usernameRegex = /^[a-z0-9_\-]{1,20}$/;
 var tokens = [];
 
 app.set('trust proxy', 1);
+app.use(function(request, response, next) {
+
+if (process.env.NODE_ENV != 'development' && !request.secure) {
+   return response.redirect("https://" + request.headers.host + request.url) } next()})
+}
+  next()
+})
 
 app.use(
   express.static("static", {
