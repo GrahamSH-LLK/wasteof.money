@@ -1,4 +1,11 @@
-These instructions may look hard, but they're actually pretty easy! @GrahamSH-LLK completed them on a Chromebook, with no problems. Just follow the instructions! If you have any problems, ask @GrahamSH
+---
+title: Setting up a cloud development database
+description: Instructions on how to setup a cloud database for development.
+code: true
+author: grahamsh
+---
+Sometimes when you're developing it might not be possible to run a database locally. These steps should help with getting a cloud database from Mongo Atlas and get it configured in your .env file. This is meant for development, it is not recommended for production.
+
 ### Account
 - First, make an account at https://www.mongodb.com/cloud/atlas/register. Fill out the fields, or sign in with Google.
 - When it prompts you to pick a provider, pick any option
@@ -20,8 +27,15 @@ These instructions may look hard, but they're actually pretty easy! @GrahamSH-LL
 - Click "Connect"
 - Click "Connect your application"
 - Copy the URL in the middle of the popup
+### Env
+#### Easy Way
+- Run
+```console
+npm run setup
+```
+#### Manual Way
 - Open the repo in vscode (or any editor) and create a file called .env
-- Add the text "DB_URL=", and paste the copied string after the = sign.
+- Add the text "DB_URL=", and paste the copied string after the = sign
 - Replace <password> with your password, and <dbname> with "social"
 - Save the file
 ### Serving
